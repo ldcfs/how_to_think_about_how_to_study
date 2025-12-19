@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <style>
+    :root {
+      --bg-col: #fff;
+      --txt-col: #000;
+    }
+
+    @font-face {
+      font-family: 'CustomFont';
+      /* This is the name you will use in your CSS */
+      src: url('/fonts/OHfont.ttf') format('ttf'),
+      /* Modern browsers */
+      /* url({{ url_for('static', filename='fonts/OHfont.woff') }}) format('woff');   Older browsers */
+      /* font-weight: normal; */
+      /* Define the weight (e.g., normal, bold, 400, 700) */
+      /* font-style: normal; */
+      /* Define the style (e.g., normal, italic) */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'CustomFont';
+      background-color: #f4f4f1;
+    }
+
+    header {
+      font-family: sans-serif;
+      background-color: rgb(36, 38, 44);
+      color: #ddd;
+      margin: 0;
+      padding: 10px;
+    }
+
+    main {
+      padding: 10px;
+      text-align: center;
+    }
+
+    summary span:first-of-type {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    details {
+      overflow: hidden;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 0 20%;
+      /* padding-bottom: 10px; */
+      margin-bottom: 10px;
+      /* transition: all 0.3s ease-out; */
+    }
+
+    /* Allow animations to 'auto' heights */
+    :root {
+      interpolate-size: allow-keywords;
+    }
+
+
+    details::details-content {
+      block-size: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition:
+        block-size 0.4s ease,
+        opacity 0.3s ease,
+        content-visibility 0.4s allow-discrete;
+    }
+
+    details[open]::details-content {
+      padding-top: 5px;
+      block-size: auto;
+      /* padding: 10px; */
+      opacity: 1;
+    }
+
+
+    details summary {
+      background-color: #ddd;
+      font-weight: bold;
+      /* margin-bottom: 5px; */
+    }
+
+    details div:first-of-type {
+      text-align: start;
+      padding: 10px;
+    }
+  </style>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Guides in studying science, information technology and languages. -->
+  </header>
+  <main>
+
+    <h1>How to successfully study anything?</h1>
+    <h2>Functions, Equations and Data Structures</h2>
+
+    <details >
+      <summary>Q&A: How to benefit from every study?</summary>
+      <div>follow and study The Truth
+        <br>The Truth is the Foundation
+        <br>The Truth is Uderlying Principle of the Universe:
+        <br>
+        study the structure and mechanisms of the universe (everything)
+        <br> and always remain humble and respectful to everyone.
+      </div>
+    </details>
+    <details >
+      <summary>
+        How the Truth is the Foundation of the Universe?
+      </summary>
+      <div>
+        <p>1. The Truth (set of Laws which are always in power and never change)</p>
+        <p>2. Science, Language and everything is based on the Truth</p>
+        <p>3. The Truth is Coherent, Consistent.</p>
+      </div>
+    </details>
+
+    <details >
+      <summary>
+        How to follow the Truth?
+      </summary>
+      <div>
+        <p>Proceed with small steps</p>
+          <p>Progress exponentially:
+            <br> slow and stable beginnings - to estabilish foundations
+            <br> (solid foundations are necessary to support exponenial growth)
+          </p>
+          <br> Making small and careful steps protect from making bigger mistakes
+          <br> Verifiy every new information against the Root/Core of the Truth
+
+        </p>
+        <p>Learn to discern incoming information:
+          <br>Being open to new information requires being able to discern and reject false information.
+        </p>
+      </div>
+    </details>
+
+    <article>
+      <b>What does it mean to study?</b>
+    </article>
+
+    <p>
+      \(The Truth = The Way\)
+    </p>
+    <p>
+      \( eXperience =\sum_{i=1}^{n} x_i \)
+    </p>
+  </main>
+
+</body>
+
+</html>
