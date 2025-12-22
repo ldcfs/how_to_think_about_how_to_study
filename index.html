@@ -10,8 +10,11 @@
       /* --bg-col: #fff;
       --txt-col: #000; */
       --bg-col: #202020;
+      --bg-col-light: #333333;
       --btn-bg: #32353b;
       --txt-col: #f1f1f1;
+      --txt-blue-purple2: #8c83ff;
+      --txt-blue-purple: #bbb6ff;
     }
 
     /* @font-face { */
@@ -239,9 +242,11 @@
         .card {
           /* background: #e4e0e0; */
           background: #a79c62;
+          background: var(--bg-col-light);
+
           padding: 30px;
           border-radius: 12px;
-          border: 1px solid #5c5932;
+          border: 1px solid #353535;
           transition: all 0.3s ease;
           display: flex;
           flex-direction: column;
@@ -249,11 +254,14 @@
           justify-content: center;
         }
 
+
+		/*
         .card:hover {
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
-          border-color: #b9bb41;
           transform: translateY(-5px);
+          border-color: #b9bb41;
         }
+	  */
 
         /* Special Layouts */
         .wide {
@@ -263,7 +271,9 @@
         .full-width {
           grid-column: 1 / -1;
           /* Spans across all columns */
-          background: linear-gradient(135deg, #b1a76f 0%, #9b9032 100%);
+          /*
+	background: linear-gradient(135deg, #b1a76f 0%, #9b9032 100%);
+	*/
         }
 
         .icon {
@@ -275,6 +285,8 @@
           margin: 0;
           font-size: 1.5rem;
           color: #452f5e;
+	  color: #8c83ff;
+	  color: var(--txt-blue-purple);
           font-weight: 600;
         }
 
@@ -286,6 +298,7 @@
 
         .about-us .card p {
           color: #1d1d1d;
+          color: var(--txt-col);
           margin-top: 10px;
           font-size: 1.5rem;
         }
@@ -307,7 +320,7 @@
         <div class="expertise-grid">
           <div class="card wide education">
             <div class="icon">\(Precision=f(humble)\)</div>
-            <h3>Education & Attitude</h3>
+            <h3>Joy Approach to Lifelong Learning </h3>
             <p>Developing not just skills, but the right mindset for growth and contribution.</p>
           </div>
 
@@ -337,7 +350,7 @@
           </div>
 
           <div class="card full-width synthesis">
-            <div class="icon">Protecting Life</div>
+            <div class="icon">Nourishing Lives by Lifelong Learning</div>
             <h3>Synthesis of Knowledge Across Domains</h3>
             <p>We connect the dots between disparate fields to create holistic, intelligent solutions.</p>
           </div>
@@ -417,10 +430,12 @@
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
           transition: transform 0.3s ease;
         }
-
+		
+	/*
         .workflow-step:hover {
           transform: translateY(-5px);
         }
+	*/
 
         .step-number {
           background: #5742d3;
@@ -529,9 +544,10 @@
         .quote-card {
           padding: 20px;
           background: #5a835c;
+          background: var(--bg-col-light);
           border-radius: 8px;
           font-style: italic;
-          border-left: 4px solid #dcdde1;
+          border-left: 4px solid #393939;
           font-size: 2rem;
         }
 
